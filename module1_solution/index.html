@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>module1_solution</title>
+</head>
+<body ng-app="LunchCheck">
+  <div ng-controller="LunchCheckController">
+    <div>
+      <h2>Enter Lunch Items seperated by ',' </h2>
+      <Br />
+      <div ng-style=textBoxStyle() style="width:23%; padding:1px">
+        //I do NOT consider  empty items.
+          <input type="text" ng-model="lunch"  />
+      </div>
+      <Br />
+      <button ng-click="checkLunch()">CheckLunch</button>
+      <br />
+      <div ng-style=getStyle()>
+      {{output}}
+      </div>
+    </div>
+  </div>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
