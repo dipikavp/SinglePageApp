@@ -1,0 +1,32 @@
+
+
+.main{
+   border:solid 2px ;
+   border-color:#D3D3D3;
+   height:300px;
+   width:500px;
+   margin: 8em 25em;
+}
+
+.textBox{
+   margin-left: 8em;
+   width:15rem;
+
+}
+input{
+  width:14.5rem;
+}
+button{
+   margin-left: 17em;
+}
+h2{
+   font-size: 20px;
+   margin-left: 11rem;
+}
+#output{
+  margin-left: 11.5em;
+}
+p{
+  font-size: 15px;
+  margin-left: 10rem;
+}

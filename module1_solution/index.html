@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="index.css">
   <title>module1_solution</title>
 </head>
 <body ng-app="LunchCheck">
   <div ng-controller="LunchCheckController">
-    <div>
-      <h2>Enter Lunch Items seperated by ',' </h2>
+    <div class="main">
+      <h2 >Lunch Checker </h2>
+      <p>I do NOT consider  empty items.</p>
       <Br />
-      <div ng-style=textBoxStyle() style="width:23%; padding:1px">
+      <div ng-style=textBoxStyle() class="textBox">
         <!--I do NOT consider  empty items.-->
-          <input type="text" ng-model="lunch"  />
+          <input type="text"  placeholder="Enter Lunch items seperated by a comma ','" ng-model="lunch"  />
       </div>
       <Br />
-      <button ng-click="checkLunch()">Check If Too Much</button>
+      <button ng-click="checkLunch()" >Check If Too Much</button>
       <br />
-      <div ng-style=getStyle()>
+      <div ng-style=getStyle() id="output">
+        <br />
       {{output}}
       </div>
     </div>
