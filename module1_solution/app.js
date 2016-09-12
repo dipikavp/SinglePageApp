@@ -38,15 +38,9 @@
       { output="Please enter data first";}
       else{
         var array=string.split(',');
-        console.log(array);
         for(var i=0; i<array.length;i++){
-             if(array[i]!="" && array[i]!=" ")
-             {
+          if(!array[i].match(/^([\s\t\r\n]*)$/))
              state+=1;
-              console.log(array[i]);
-             }
-        console.log(state);
-
         }
 
         if (state<=3) {
